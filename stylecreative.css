@@ -1,0 +1,142 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    position: absolute;
+    width: 75%;
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    width: 25%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 500px;
+  } 
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/tg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: lightgray;
+}
+
+.btn-secondary {
+    background: #4285F4;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #357ae8;
+}
+
+
+.gallery{
+	
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.des{
+	padding: 15px;
+	text-align: center;
+}
+
+
+.gallery img:hover{
+	transform: scale(1.05, 1.05);
+}
+/*2D transformation*/
+
+/*translate()
+rotate()
+skew()
+scale()
+matrix()*/
